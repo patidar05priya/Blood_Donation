@@ -1,0 +1,60 @@
+<project-modules id="moduleCoreId" project-version="2.0">
+  <wb-module deploy-name="RESTfulExample">
+    <property name="context-root" value="RESTfulExample"/>
+    <wb-resource deploy-path="/" source-path="src/main/webapp"/>
+    <property name="java-output-path" value="/target/classes"/>
+    <dependent-module archiveName="activation-1.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/activation/activation/1.1/activation-1.1.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="commons-codec-1.2.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/commons-codec/commons-codec/1.2/commons-codec-1.2.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="commons-httpclient-3.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/commons-httpclient/commons-httpclient/3.1/commons-httpclient-3.1.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="commons-logging-1.0.4.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/commons-logging/commons-logging/1.0.4/commons-logging-1.0.4.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="httpclient-4.0.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/apache/httpcomponents/httpclient/4.0.3/httpclient-4.0.3.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="httpcore-4.0.1.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/apache/httpcomponents/httpcore/4.0.1/httpcore-4.0.1.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="jackson-core-asl-1.6.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/codehaus/jackson/jackson-core-asl/1.6.3/jackson-core-asl-1.6.3.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="jackson-jaxrs-1.6.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/codehaus/jackson/jackson-jaxrs/1.6.3/jackson-jaxrs-1.6.3.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="jackson-mapper-asl-1.6.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/codehaus/jackson/jackson-mapper-asl/1.6.3/jackson-mapper-asl-1.6.3.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="jackson-xc-1.6.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/codehaus/jackson/jackson-xc/1.6.3/jackson-xc-1.6.3.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="javassist-3.12.1.GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javassist/javassist/3.12.1.GA/javassist-3.12.1.GA.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="jaxrs-api-2.2.1.GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/jboss/resteasy/jaxrs-api/2.2.1.GA/jaxrs-api-2.2.1.GA.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="jcip-annotations-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/net/jcip/jcip-annotations/1.0/jcip-annotations-1.0.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="jsr250-api-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/javax/annotation/jsr250-api/1.0/jsr250-api-1.0.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="resteasy-jackson-provider-2.2.1.GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/jboss/resteasy/resteasy-jackson-provider/2.2.1.GA/resteasy-jackson-provider-2.2.1.GA.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="resteasy-jaxrs-2.2.1.GA.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/jboss/resteasy/resteasy-jaxrs/2.2.1.GA/resteasy-jaxrs-2.2.1.GA.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <dependent-module archiveName="scannotation-1.0.3.jar" deploy-path="/WEB-INF/lib" handle="module:/classpath/var/M2_REPO/org/scannotation/scannotation/1.0.3/scannotation-1.0.3.jar">
+      <dependency-type>uses</dependency-type>
+    </dependent-module>
+    <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/java"/>
+    <wb-resource deploy-path="/WEB-INF/classes" source-path="src/main/resources"/>
+  </wb-module>
+</project-modules>

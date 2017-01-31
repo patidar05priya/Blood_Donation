@@ -1,0 +1,33 @@
+Create table USERS ( USERID_PK varchar(255) , USERNAME varchar(255) , BLOODGROUP  varchar(5) , ADDRESS varchar(255), PHONENUMBER int(12), AGE int(2), WEIGHT int(3), CREATEDON date ,DONATIONCOUNT int(5), LASTDONATION date , ISAVAILABLE number(1), USERTYPE varchar(15)  );
+
+Create table DONATION_ACTIVITY ( DONATIONID_PK  varchar(255) ,  USERID_FK  varchar(255),   RECEVERID_FK   varchar(255) , DATEOFDONATION date ,  ADDRESS varchar(255) ,  STATUS varchar(10)  , FOREIGN KEY (USERID_FK)
+REFERENCES USERS(USERID_PK) , FOREIGN KEY (RECEVERID_FK) REFERENCES RECEIVER(RECEVERID_PK));
+
+
+Create table RECEIVER (  RECEIVERID_PK  varchar(255) , NAME varchar(255) , AGE int(2) ,  BLOODGROUP varchar(5) ,  ADDRESS varchar(255) , CREATEDON date ,   DESCRIPTION    varchar(255)  );
+
+
+
+// For Oracle
+
+Create table RECEIVER (  RECEIVERID_PK  varchar(255) , NAME varchar(255) , AGE number(2) ,  BLOODGROUP varchar(5) , 
+ADDRESS varchar(255) , CREATEDON date ,   DESCRIPTION    varchar(255) , CONSTRAINT mno PRIMARY KEY (RECEIVERID_PK) );
+
+
+Create table USERS ( USERID_PK varchar(255) , USERNAME varchar(255) , BLOODGROUP  varchar(5) , ADDRESS varchar(255), PHONENUMBER number(12), 
+AGE number(2), WEIGHT number(3), CREATEDON date 
+,DONATIONCOUNT number(5), LASTDONATION date , ISAVAILABLE number(1), USERTYPE varchar(15) , CONSTRAINT abc PRIMARY KEY (USERID_PK));
+
+
+Create table DONATION_ACTIVITY ( DONATIONID_PK  varchar(255) ,  USERID_FK  varchar(255),   RECEIVERID_FK   varchar(255) ,
+DATEOFDONATION date ,  ADDRESS varchar(255) ,  STATUS varchar(10)  ,CONSTRAINT def FOREIGN KEY (USERID_FK)
+REFERENCES USERS(USERID_PK) , CONSTRAINT xyz FOREIGN KEY (RECEIVERID_FK) REFERENCES RECEIVER(RECEIVERID_PK));
+
+
+
+create User BloodDonation identified by root;
+grant all privileges to BloodDonation;
+
+
+User and DonationActivity Table Mapping
+select * from user u join donationactivity da on u.userid_pk = da.userid_fk where da.userid_fk = 12;

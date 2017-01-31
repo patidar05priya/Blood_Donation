@@ -1,0 +1,5 @@
+insert into CATEGORY(name) values('Livon');
+
+INSERT INTO PRODUCT (description, name, price, CATEGORY_ID) values('healthcare', 'hair serum', 300,1);
+
+insert into ORDERS(amount, CUSTOMER_NAME, PURCHASE_DATE, PRODUCT_ID) values(5000, 'Deepak', '29-07-2015',2);

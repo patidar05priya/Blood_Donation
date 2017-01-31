@@ -1,0 +1,13 @@
+S.No.-------Rest Calls---------------------Status---TYPE----Service-Layer(Autowired)
+
+1. /rest/UserDetails/getUserLogin/   		Done   	GET		IUserDetailsService
+
+2. /rest/UserDetails/userRegistration  		Done	POST	IUserRegistrationService
+
+3. /rest/UserDetails/checkUserIdAvailabilty  Done  	GET		IUserRegistrationService
+
+4. /rest/UserDetails/getUserDetails					GET		IUserRegistrationService
+
+5. /rest/UserDetails/updateUserProfile				POST	IUserRegistrationService
+
+6. /rest/UserDetails/changeUserPassword				GET		IUserRegistrationService

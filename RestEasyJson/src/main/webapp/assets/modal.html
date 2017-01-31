@@ -1,0 +1,587 @@
+<!--  Registration Modal Window Start  -->
+ <div class="modal fade" data-backdrop='false' id="UserRegistrationModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="width: 92%;margin-left: 10%;height: 655px;">
+          <div class="modal-header" style="background-color: #1A70C5;">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel"><i class="icon-key"></i>
+            <spam style="color:#fff;font-size:22px;opacity:0.8;">Registration Form</spam> </h4>
+            <h1 class="" ><i class="icon-key"></i>
+ 			<spam id="UserRegistrationModalMessage" style="font-size:10px;opacity:0.8;"></spam> </h1>
+          </div>
+          <div class="modal-body">
+			  
+ <div class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_1" class="form-input-wide" data-type="control_head" style="width:80%;">
+        <div class="form-header-group" style="border-bottom: none;">
+          <div class="header-text httal htvam">
+            <div id="subHeader_1" class="form-subHeader" style="border-top: none;">
+              Please fill in the form below.
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_fullname" id="id_3">
+        <label class="form-label form-label-left form-label-auto" id="label_3" for="input_3">
+          Full Name
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_3" class="form-input jf-required">
+<!--
+          <span class="form-sub-label-container" style="vertical-align: top">
+            <input class="form-textbox" type="text" name="q3_fullName3[prefix]" size="4" id="prefix_3" />
+            <label class="form-sub-label" for="prefix_3" id="sublabel_prefix" style="min-height: 13px;"> Prefix </label>
+          </span>
+-->
+          <span class="form-sub-label-container" style="vertical-align: top">
+            <input class="form-textbox validate[required]" type="text" size="10" name="q3_fullName3[first]" id="first_name_register" />
+            <label class="form-sub-label" for="first_3" id="sublabel_first" style="min-height: 13px;"> First Name </label>
+          </span>
+          <span class="form-sub-label-container" style="vertical-align: top">
+            <input class="form-textbox validate[required]" type="text" size="15" name="q3_fullName3[last]" id="last_name_register" />
+            <label class="form-sub-label" for="last_3" id="sublabel_last" style="min-height: 13px;"> Last Name </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_7">
+        <label class="form-label form-label-left form-label-auto" id="label_7" for="input_7">
+          Blood Group
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_7" class="form-input jf-required">
+          <select class="form-dropdown selectpicker" style="width:150px" id="bloodGroup_register" name="bloodGroup_register">
+            <option value="-" selected> Select Blood Group </option>
+            <option value="AB_POSITIVE"> AB+ </option>
+            <option value="AB_NEGATIVE"> AB- </option>
+            <option value="A_POSITIVE"> A+ </option>
+            <option value="A_NEGATIVE"> A- </option>
+            <option value="B_POSITIVE"> B+ </option>
+            <option value="B_NEGATIVE"> B- </option>
+            <option value="O_POSITIVE"> O+ </option>
+            <option value="O_NEGATIVE"> O- </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_7">
+        <label class="form-label form-label-left form-label-auto" id="label_7" for="input_7">
+          Register As
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_7" class="form-input jf-required">
+          <select class="form-dropdown selectpicker" style="width:150px" id="userType_register" name="userType_register">
+            <option value="-" selected> Select User Type </option>
+            <option value="DONNER"> Donner </option>
+            <option value="RECEIVER"> Seeker </option>
+          </select>
+        </div>
+      </li>
+      
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_7">
+        <label class="form-label form-label-left form-label-auto" id="label_7" for="input_7">
+          Age
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_7" class="form-input jf-required">
+           <input style="width: 100%;" class="form-textbox validate[required] form-address-line" type="text" name="q5_address5[addr_line1]" id="age_register" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_7">
+        <label class="form-label form-label-left form-label-auto" id="label_7" for="input_7">
+          Weight
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_7" class="form-input jf-required">
+           <input style="width: 100%;" class="form-textbox validate[required] form-address-line" type="text" name="q5_address5[addr_line1]" id="weight_register" />
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_address" id="id_5">
+        <label class="form-label form-label-left form-label-auto" id="label_5" for="input_5">
+          Address
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_5" class="form-input jf-required">
+          <table summary="" undefined class="form-address-table" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td colspan="2">
+                <span class="form-sub-label-container" style="vertical-align: top">
+                  <input class="form-textbox validate[required] form-address-line" type="text" name="q5_address5[addr_line1]" id="address_register" />
+                  <label class="form-sub-label" for="input_5_addr_line1" id="sublabel_5_addr_line1" style="min-height: 13px;"> Full Address </label>
+                </span>
+              </td>
+            </tr>
+<!--             <tr>
+              <td width="50%" function zip(){var iterator=Prototype.K,args=$A(arguments);if(Object.isFunction(args.last())) iterator=args.pop();var collections=[this].concat(args).map($A);return this.map(function(value,index){return iterator(collections.pluck(index));});}>
+                <span class="form-sub-label-container" style="vertical-align: top">
+                  <input class="form-textbox validate[required] form-address-postal" type="text" name="q5_address5[postal]" id="postalCode_register" size="10" />
+                  <label class="form-sub-label" for="input_5_postal" id="sublabel_5_postal" style="min-height: 13px;"> Postal / Zip Code </label>
+                </span>
+              </td>
+              <td>
+                <span class="form-sub-label-container" style="vertical-align: top">
+                  <select class="form-dropdown validate[required] form-address-country" defaultcountry="" name="q5_address5[country]" id="country_register">
+                    <option value="" selected> Please Select </option>
+                    <option value="INDIA"> India </option>
+                  </select>
+                  <label class="form-sub-label" for="input_5_country" id="sublabel_5_country" style="min-height: 13px;"> Country </label>
+                </span>
+              </td>
+            </tr>
+ -->          </table>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_phone" id="id_8" style="margin-top: -4%;">
+        <label class="form-label form-label-left form-label-auto" id="label_8" for="input_8"> Phone Number 
+        <span class="form-required">
+            *
+          </span></label>
+        <div id="cid_8" class="form-input jf-required">
+          <span class="form-sub-label-container" style="vertical-align: top">
+            <input class="form-textbox" type="tel" name="q8_phoneNumber[area]" id="areaCode_register" size="3">
+            <span class="phone-separate">
+              &nbsp;-
+            </span>
+            <label class="form-sub-label" for="input_8_area" id="sublabel_area" style="min-height: 13px;"> Area Code </label>
+          </span>
+          <span class="form-sub-label-container" style="vertical-align: top">
+            <input class="form-textbox" type="tel" name="q8_phoneNumber[phone]" id="phoneNumber_register" size="8">
+            <label class="form-sub-label" for="input_8_phone" id="sublabel_phone" style="min-height: 13px;"> Phone Number </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_email" id="id_4">
+        <label class="form-label form-label-left form-label-auto" id="label_4" for="input_4">
+          E-mail
+
+          <span class="form-required">
+            *
+          </span>
+
+        </label>
+        <div id="cid_4" class="form-input jf-required">
+          <input type="email" class=" form-textbox validate[required, Email]" id="emailId_register" name="q4_email4" size="30" value="" />
+        </div>
+      </li>
+     
+      <li class="form-line" data-type="control_button" id="id_2">
+        <div id="cid_2" class="form-input-wide">
+          <div style="margin-left: 184px;margin-top: -20%;" class="form-buttons-wrapper">
+            
+            
+            <section class="progress-demo">
+            <button id="submit_register_button" onclick = "checkUserIdAvailabilty();" class="ladda-button" data-color="purple" data-style="expand-right" value = "Submit">Submit</button>
+			</section>
+			<!--   <button id="submit_register_button" type="submit" class="form-submit-button" onclick = "checkUserIdAvailabilty();">
+              Submit Form
+            </button> -->
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+
+			</div>
+        </div>
+      </div>
+    </div>
+<!--  Registration Modal  Window End -->
+
+<!--  Request Modal Window Start  -->
+ <div class="modal fade" data-backdrop='false' id="BloodSickerModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="width: 92%;margin-left: 10%;height: 582px;margin-top: 6%;">
+          <div class="modal-header" style="background-color: #1A70C5;">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel"><i class="icon-key"></i>
+            <spam style="color:#fff;font-size:22px;opacity:0.8;">Request Form</spam> </h4>
+            <h1 class="" ><i class="icon-key"></i>
+ 			<spam id="BloodSickerModalMessage" style="font-size:10px;opacity:0.8;"></spam> </h1>
+          </div>
+          <div class="modal-body">
+
+			  <div class="form-all">
+    <ul class="form-section page-section">
+	<li id="cid_1" class="form-input-wide" data-type="control_head" style="width: 80%;">
+        <div class="form-header-group" style="border-bottom: none;">
+          <div class="header-text httal htvam">
+            <div id="subHeader_1" class="form-subHeader" style="border-top: none;">
+              Please fill in the form below.
+            </div>
+          </div>
+        </div>
+      </li>      <li class="form-line jf-required" data-type="control_fullname" id="id_2">
+        <label class="form-label form-label-top" id="label_2" for="input_2">
+          Full Name
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_2" class="form-input-wide jf-required" style = "margin-left: 25%;margin-top: -5%;">
+          <span class="form-sub-label-container" style="vertical-align: top">
+            <input class="form-textbox validate[required]" type="text" size="10" name="q2_fullName2[first]" id="first_name_request" />
+            <label class="form-sub-label" for="first_2" id="sublabel_first" style="min-height: 13px;"> First Name </label>
+          </span>
+<!--           <span class="form-sub-label-container" style="vertical-align: top">
+            <input class="form-textbox" type="text" size="10" name="q2_fullName2[middle]" id="middle_2" />
+            <label class="form-sub-label" for="middle_2" id="sublabel_middle" style="min-height: 13px;"> Middle Name </label>
+          </span>
+ -->          <span class="form-sub-label-container" style="vertical-align: top">
+            <input class="form-textbox validate[required]" type="text" size="15" name="q2_fullName2[last]" id="last_name_request" />
+            <label class="form-sub-label" for="last_2" id="sublabel_last" style="min-height: 13px;"> Last Name </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_15">
+        <label class="form-label form-label-left form-label-auto" id="label_15" for="input_15">
+          Blood Group
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_15" class="form-input jf-required">
+          <select class="form-dropdown selectpicker" style="width:150px" id="blood_group_request" name="q15_bloodGroup">
+            <option value="">  </option>
+            <option value="-" selected> Select Blood Group </option>
+            <option value="AB_POSITIVE"> AB+ </option>
+            <option value="AB_NEGATIVE"> AB- </option>
+            <option value="A_POSITIVE"> A+ </option>
+            <option value="A_NEGATIVE"> A- </option>
+            <option value="B_POSITIVE"> B+ </option>
+            <option value="B_NEGATIVE"> B- </option>
+            <option value="O_POSITIVE"> O+ </option>
+            <option value="O_NEGATIVE"> O- </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_phone" id="id_5">
+        <label class="form-label form-label-top" id="label_5" for="input_5">
+          Contact Number
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_5" class="form-input-wide jf-required" style="margin-left: 25%;margin-top: -5%;">
+       <!--    <span class="form-sub-label-container" style="vertical-align: top">
+            <input class="form-textbox validate[required]" type="tel" name="q5_contactNumber[area]" id="" size="3">
+            <span class="phone-separate">
+              &nbsp;-
+            </span>
+            <label class="form-sub-label" for="input_5_area" id="sublabel_area" style="min-height: 13px;"> Area Code </label>
+          </span> -->
+          <span class="form-sub-label-container" style="vertical-align: top">
+            <input class="form-textbox validate[required]" type="tel" name="q5_contactNumber[phone]" id="phoneNumber_request" size="8">
+            <label class="form-sub-label" for="input_5_phone" id="sublabel_phone" style="min-height: 13px;"> Phone Number </label>
+          </span>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_address" id="id_16">
+        <label class="form-label form-label-left form-label-auto" id="label_16" for="input_16"> Address </label>
+        <div id="cid_16" class="form-input jf-required">
+          <table summary="" undefined class="form-address-table" border="0" cellpadding="0" cellspacing="0">
+            <tr>
+              <td colspan="2">
+                <span class="form-sub-label-container" style="vertical-align: top">
+                  <input class="form-textbox form-address-line" type="text" name="q16_address16[addr_line1]" id="address_request" />
+                  <label class="form-sub-label" for="input_16_addr_line1" id="sublabel_16_addr_line1" style="min-height: 13px;"> Full Address </label>
+                </span>
+              </td>
+            </tr>
+            <tr>
+    <!--           <td width="50%" function zip(){var iterator=Prototype.K,args=$A(arguments);if(Object.isFunction(args.last())) iterator=args.pop();var collections=[this].concat(args).map($A);return this.map(function(value,index){return iterator(collections.pluck(index));});}>
+                <span class="form-sub-label-container" style="vertical-align: top">
+                  <input class="form-textbox form-address-postal" type="text" name="q16_address16[postal]" id="input_16_postal" size="10" />
+                  <label class="form-sub-label" for="input_16_postal" id="sublabel_16_postal" style="min-height: 13px;"> Postal / Zip Code </label>
+                </span>
+              </td>
+              <td>
+                <span class="form-sub-label-container" style="vertical-align: top">
+                  <select class="form-dropdown selectpicker" defaultcountry="" name="q16_address16[country]" id="input_16_country">
+                    <option value="" selected> Please Select </option>
+                    <option value="INDIA"> India </option>
+                    <option value="other"> Other </option>
+                  </select>
+                  <label class="form-sub-label" for="input_16_country" id="sublabel_16_country" style="min-height: 13px;"> Country </label>
+                </span>
+              </td> -->
+            </tr>
+          </table>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textarea" id="id_14" style="margin-top: -35px;">
+        <label class="form-label form-label-top" id="label_14" for="input_14"> Additional Requests </label>
+        <div id="cid_14" class="form-input-wide jf-required">
+          <textarea id="additional_request" class="form-textarea" name="q14_additionalRequests" cols="40" rows="6" style="margin-left: 150px;width: 308px;"></textarea>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_13">
+        <div id="cid_13" class="form-input-wide">
+          <div style="margin-left:156px;margin-top: -40px;" class="form-buttons-wrapper">
+         
+         <section class="progress-demo" style="padding: 18px;">
+		            <button id="submit_request_button" onclick = "submitRequest()" class="ladda-button" data-color="purple" data-style="expand-right" value = "Submit">Submit</button>
+				</section>
+				
+       <!--      <button id="input_13" type="submit" class="form-submit-button">
+              Submit
+            </button> -->
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+
+
+  			</div>
+        </div>
+      </div>
+    </div>
+<!--  Blood Sicker Modal Window End  -->
+
+<!--  Find Donner Window Start  -->
+ <div class="modal fade" data-backdrop='false' id="FindDonerModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="width: 130%;margin-left: -14%;">
+          <div class="modal-header" style="background-color: #1A70C5;">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel"><i class="icon-key"></i>
+            <spam style="color:#fff;font-size:22px;opacity:0.8;">Find Donner Form</spam> </h4>
+            <h1 class="" ><i class="icon-key"></i>
+ 			<spam id="FindDonerModalMessage" style="font-size:10px;opacity:0.8;"></spam> </h1>
+          </div>
+          <div class="modal-body">
+			<div class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_18" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group">
+          <div class="header-text httal htvam">
+            <div id="subHeader_18" class="form-subHeader" style="border:none;">
+              Please fill out this form and we will find list of suitable doner shortly.
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_19">
+        <label class="form-label form-label-top form-label-auto" id="label_19" for="input_19">
+          Blood Group
+          <span class="form-required">
+            *
+          </span>
+        </label>
+        <div id="cid_19" class="form-input-wide jf-required">
+          <select class="form-dropdown selectpicker" style="width:150px" id="input_19" name="q19_bloodGroup">
+            <<option value="-" selected> Select Blood Group </option>
+            <option value="AB+"> AB+ </option>
+            <option value="AB-"> AB- </option>
+            <option value="A+"> A+ </option>
+            <option value="A-"> A- </option>
+            <option value="B+"> B+ </option>
+            <option value="B-"> B- </option>
+            <option value="O+"> O+ </option>
+            <option value="O-"> O- </option>
+          </select>
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_20">
+        <label class="form-label form-label-top form-label-auto" id="label_20" for="input_20"> Locality </label>
+        <div id="cid_20" class="form-input-wide jf-required">
+          <input type="text" class=" form-textbox" data-type="input-textbox" id="input_20" name="q20_locality" size="20" value="" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_14">
+        <div id="cid_14" class="form-input-wide">
+          <div style="text-align:center" class="form-buttons-wrapper">
+            <button id="input_14" type="submit" class="form-submit-button">
+              Submit
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+
+  			</div>
+        </div>
+      </div>
+    </div>
+<!--  Find Donner Modal Window End  -->
+<!--  loginModal Window Start  -->
+ <div class="modal fade" data-backdrop='false' id="loginModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="width: 130%;margin-left: -14%;">
+          <div class="modal-header"style="background-color: #1A70C5;">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel"><i class="icon-key"></i>
+            <spam style="color:#fff;font-size:22px;opacity:0.8;">Login Form</spam> </h4>
+            <h1 class="" ><i class="icon-key"></i>
+ 			
+          </div>
+          <div class="modal-body">
+			<div class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_18" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group">
+          <div class="header-text httal htvam">
+            <div id="subHeader_18" class="form-subHeader" style="border:none;">
+              Please enter your credentials.
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_19">
+        <label class="form-label form-label-top form-label-auto" id="label_19" for="input_19">
+          User Name
+        </label>
+        <div id="cid_19" class="form-input-wide jf-required">
+          <input type="text" class=" form-textbox" data-type="input-textbox" id="userId" name="q20_locality" size="20" value="" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_20">
+        <label class="form-label form-label-top form-label-auto" id="label_20" for="input_20"> Password </label>
+        <div id="cid_20" class="form-input-wide jf-required">
+          <input type="password" class=" form-textbox" data-type="input-textbox" id="userPwd" name="q20_locality" size="20" value="" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_20">
+        <a id = "forgotPassword" onclick="openForgotPwdModal()"><label class="form-label form-label-top form-label-auto" id="label_20" for="input_20"> Forgot Password </label></a>
+      </li>
+      <li class="form-line" data-type="control_textbox" id="id_20">
+        <spam id="loginMessage" style="font-size:10px;opacity:0.8;"></spam> </h1>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_14">
+        <div id="cid_14" class="form-input-wide">
+          <div style="text-align:center" class="form-buttons-wrapper">
+		        <section class="progress-demo" style="padding: 0px;">
+		            <button id="submit_register_button" onclick = "getUserLogin(this)" class="ladda-button" data-color="purple" data-style="expand-right" value = "Submit">Login</button>
+				</section>
+          </div>
+        </div>
+      </li>
+        
+      
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+
+  			</div>
+        </div>
+      </div>
+    </div>
+<!--  Login Modal Window End  -->
+<!--  hospitalListModal Window Start  -->
+ <div class="modal fade" data-backdrop='false' id="hospitalListModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="width: 150%;margin-left: -21%;">
+          <div class="modal-header"style="background-color: #1A70C5;">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel"><i class="icon-key"></i>
+            <spam style="color:#fff;font-size:22px;opacity:0.8;">Hospital List</spam> </h4>
+            <h1 class="" ><i class="icon-key"></i>
+ 			
+          </div>
+          <div class="modal-body">
+			<div class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_18" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group">
+          <div class="header-text httal htvam">
+            <div id="subHeader_18" class="form-subHeader" style="border:none;">
+              List of Hospitals.
+            </div>
+          </div>
+        </div>
+      </li>
+		<div id ="hospitalList" style="width: 134%;margin-top: 2%;">
+		</div>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+
+    </div>
+        </div>
+      </div>
+    </div>
+<!--  hospitalListModal Modal Window End  -->
+
+
+<!--  Forgot Password Window Start  -->
+ <div class="modal fade" data-backdrop='false' id="forgotPwdModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content" style="width: 130%;margin-left: -14%;">
+          <div class="modal-header" style="background-color: #1A70C5;">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title" id="myModalLabel"><i class="icon-key" style=""></i>
+            <spam style="color:#fff;font-size:22px;opacity:0.8;">Forgot Password</spam> </h4>
+            <h1 class="" ><i class="icon-key"></i>
+ 			<spam id="forgotPwdModalMessage" style="font-size:10px;opacity:0.8;"></spam> </h1>
+          </div>
+          <div class="modal-body">
+			<div class="form-all">
+    <ul class="form-section page-section">
+      <li id="cid_18" class="form-input-wide" data-type="control_head">
+        <div class="form-header-group">
+          <div class="header-text httal htvam">
+            <div id="subHeader_18" class="form-subHeader" style="border:none;">
+              Please enter your credentials.
+            </div>
+          </div>
+        </div>
+      </li>
+      <li class="form-line jf-required" data-type="control_dropdown" id="id_19">
+        <label class="form-label form-label-top form-label-auto" id="label_19" for="input_19">
+          Email Id
+        </label>
+        <div id="cid_19" class="form-input-wide jf-required">
+          <input type="text" class=" form-textbox" data-type="input-textbox" id="input_emailId" name="q20_locality" size="20" value="" />
+        </div>
+      </li>
+      <li class="form-line" data-type="control_button" id="id_14">
+        <div id="cid_14" class="form-input-wide">
+          <div style="text-align:center" class="form-buttons-wrapper">
+            <button id="input_14" type="submit" class="form-submit-button" onclick="sendPwd()">
+              Send
+            </button>
+          </div>
+        </div>
+      </li>
+      <li style="display:none">
+        Should be Empty:
+        <input type="text" name="website" value="" />
+      </li>
+    </ul>
+  </div>
+
+  			</div>
+        </div>
+      </div>
+    </div>
+<!--  Forgot Password Modal Window End  -->

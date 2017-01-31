@@ -1,0 +1,46 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:task="http://www.springframework.org/schema/task" 
+	 xsi:schemaLocation="http://www.springframework.org/schema/beans 
+                           http://www.springframework.org/schema/beans/spring-beans.xsd
+                           http://www.springframework.org/schema/context 
+                           http://www.springframework.org/schema/context/spring-context.xsd
+                           http://www.springframework.org/schema/task
+						   http://www.springframework.org/schema/task/spring-task-3.1.xsd">
+	
+	<!-- This will Run method run of class RunScheduler in every 5 seconds  -->
+	<!-- <task:scheduled-tasks scheduler="newScheduler">
+		<task:scheduled ref="runScheduler" method="run" fixed-delay="5000" />
+    </task:scheduled-tasks>
+    <task:scheduler id="newScheduler" /> -->
+	
+	<!-- This will Run method run of class RunScheduler on specific time (09:30 pm) -->
+    <!--  <task:scheduled-tasks>
+		<task:scheduled ref="runScheduler" method="runOnTime" cron="00 30 21 * * *" />
+   </task:scheduled-tasks>  -->
+
+	<context:annotation-config />
+	 <context:component-scan
+        base-package="com.deepak.*"/>
+	<bean class="org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor"/>
+	<bean id="applicationContextProvder"
+                        class="com.deepak.utils.ApplicationContextProvider"/>
+    <bean id="user"
+                   class="com.deepak.modal.User"/>
+	                        
+	
+<!-- 	<bean  class="com.deepak.restimpl.UserDetailsRestImpl"/> -->
+	
+<!-- 	<bean  class="com.deepak.daoimpl.UserDetailsDaoImpl"/> -->
+ 
+ 
+ <!-- <bean id="userDao" class="com.deepak.daoimpl.UserDetailsDaoImpl">
+    <property name="sessionFactory" ref="sessionFactory" />
+</bean>
+
+<bean id="userDaoFactory" class="com.deepak.serviceimpl.UserDetailsServiceImpl">
+    <property name="userDao" ref="userDao" />
+</bean> -->
+ 
+</beans>

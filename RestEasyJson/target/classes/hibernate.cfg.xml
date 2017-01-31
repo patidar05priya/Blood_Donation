@@ -1,0 +1,28 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+        "-//Hibernate/Hibernate Configuration DTD 3.0//EN"
+        "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>        
+  <session-factory>
+    <!-- Database connection settings -->
+    <property name="connection.driver_class">com.mysql.jdbc.Driver</property>
+    <property name="connection.url">jdbc:mysql://localhost:3306/BloodDonation</property>
+    <property name="connection.username">root</property>
+    <property name="connection.password">root</property>
+    <property name="dialect">org.hibernate.dialect.MySQLDialect</property>
+    <property name="show_sql">true</property>
+    <property name="hibernate.hbm2ddl.auto">update</property>
+    
+    <!--    <property name="connection.driver_class">oracle.jdbc.driver.OracleDriver</property>
+    <property name="connection.url">jdbc:oracle:thin:@localhost:1521:xe</property>
+    <property name="connection.username">BloodDonation</property>
+    <property name="connection.password">root</property>
+    <property name="dialect">org.hibernate.dialect.OracleDialect</property>
+    <property name="show_sql">true</property>
+    <property name="hibernate.hbm2ddl.auto">update</property> -->
+    
+    <mapping class="com.deepak.modal.User"/>
+    <mapping class="com.deepak.modal.Receiver"/>
+    <mapping class="com.deepak.modal.DonationActivity"/>
+  </session-factory>
+</hibernate-configuration>
